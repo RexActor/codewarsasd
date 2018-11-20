@@ -8,6 +8,22 @@ namespace codewars
 {
     class Program
     {
+
+
+        public static string CreateArraY(int numbers)
+        {
+            Random z = new Random();
+
+            string text = "";
+
+            for (int i = 1; i <= numbers; i++)
+            {
+                int y = z.Next(i, i * 20);
+                text = $"{text} {y}";
+            }
+
+            return text;
+        }
         static void Main(string[] args)
         {
             #region alphabet location
@@ -98,6 +114,56 @@ namespace codewars
             */
             #endregion
 
+
+            #region sort array
+            /*
+            //String[] test = CreateArraY(20).Split(' ');
+
+            int[] test = new int[] { 1, 5, 8,6, 20, 58, 669, 47, 2, 668, };
+       
+
+            Console.WriteLine("Before Sorting");
+
+            foreach (var m in test)
+            {
+                Console.Write($"{m} ");
+            }
+
+
+
+            //Array.Sort(test, (x, y) => y.CompareTo(x));
+            //test = test.OrderBy(i => i);
+
+            Array.Sort(test,(x,y)=>y.CompareTo(x));
+
+
+            Console.WriteLine();
+
+            foreach (var c in test)
+            {
+                Console.Write($" {c} ");
+            }
+
+            
+            Console.ReadLine();
+
+    */
+            #endregion
+
+
+            string x = String.Empty;
+            Console.WriteLine("enter text");
+            x = Console.ReadLine();
+
+            String[] stringArray = x.Split(' ');
+
+            foreach (var c in stringArray)
+            {
+                
+
+            }
         }
+
+
     }
 }
