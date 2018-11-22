@@ -159,8 +159,15 @@ namespace codewars
 
             foreach (var c in stringArray)
             {
-                
+                Char[] charArray = c.ToCharArray();
+                foreach (var m in charArray)
+                {
+                    int result = -1;
+                    int tempInt = 0;
+                   
+                    
 
+                }
             }
         }
 
