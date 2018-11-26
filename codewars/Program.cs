@@ -150,27 +150,23 @@ namespace codewars
     */
             #endregion
 
+            Console.WriteLine(Feast("great blue heron", "garlic naan"));
+            Console.ReadLine();
 
-            string x = String.Empty;
-            Console.WriteLine("enter text");
-            x = Console.ReadLine();
 
-            String[] stringArray = x.Split(' ');
-
-            foreach (var c in stringArray)
-            {
-                Char[] charArray = c.ToCharArray();
-                foreach (var m in charArray)
-                {
-                    int result = -1;
-                    int tempInt = 0;
-                   
-                    
-
-                }
-            }
+            
         }
-
+        #region check if first char matches last char
+        public static bool Feast(string beast, string dish)
+        {
+            if (beast[0] == dish[0] &&  beast[beast.Length-1]== dish[dish.Length-1])
+            {
+                return true;
+            }
+            else return false;
+           
+        }
+        #endregion
 
     }
 }
